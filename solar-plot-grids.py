@@ -19,10 +19,10 @@ plot()
 grid(True)
 
 title('Voltage and Power vs Current')
-xticks(arange(0, 131, 5), rotation=45)
+xticks(arange(0, 141, 5), rotation=45)
 xlabel('Panel current (mA)')
 
-yticks(arange(0, 22.1, 1))
+yticks(arange(0, 24.1, 1))
 ylabel('Panel voltage (V)\n and power ($\\times 100$mW)')
 
 tight_layout()
