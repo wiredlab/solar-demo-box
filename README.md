@@ -21,8 +21,12 @@ Panel label specs:
 
 | Name              | Min   | Max   | Unit |
 | ----              | ---   | ---   | ---- |
-| Input voltage     |   0.1 |  40.0 | V |
-                                     
+| Panel voltage     |   0.1 |  25.0 | V |
+| Load current      |   1.0 |  3000 | mA |
 
+
+- Target 1% accuracy.
+- Load current range switching.
+- Max input voltage limited by `INA219`.
 
 
