@@ -89,6 +89,7 @@ Estimate the angle by moving it to 45&deg; and then splitting into thirds.
 // below is not for the print handout
 // just notes on the activity logistics
 ifndef::env-handout[]
+<<<
 == Notes
 
 
