@@ -1,14 +1,19 @@
 = Solar Panel Behavior
+Valparaiso University - Electrical and Computer Engineering
 :xrefstyle: short
+:reproducible:
 ifdef::env-handout[]
 :!toc:
 endif::[]
-:reproducible:
 
 include::subs.adoc[]
 
 
 :fillin: pass:[<span style="display:inline-block; width:8em; border-bottom:1px solid;"></span>]
+
+
+Solar energy from the sun is about a 1000 W/m^2^ at the top of the Earth's atmosphere.
+How can we capture that energy?
 
 
 
@@ -21,10 +26,8 @@ Rated input power:: {fillin} {W}
 
 Rated brightness:: {fillin} {nbsp}lm
 
----
 
-[horizontal]
-Measured input power:: {fillin} {W}
+_Measured input power_:: {fillin} {W}
 
 
 == Solar panel info
@@ -32,9 +35,9 @@ Measured input power:: {fillin} {W}
 [horizontal]
 Num. cells in series:: {fillin}
 
-Open circuit voltage:: {fillin} {V}
+_Open circuit voltage_:: {fillin} {V}
 
-&rarr; computed:: {fillin} {V} / cell
+_&rarr; computed_:: {fillin} {V} / cell
 
 
 
@@ -45,7 +48,7 @@ The series connection of the individual solar cells into the complete panel has 
 
 
 [horizontal]
-Measure *short-circuit current*:: {fillin} {mA}
+_Measure short-circuit current_:: {fillin} {mA}
 
 
 ---
@@ -57,7 +60,6 @@ Measure *short-circuit current*:: {fillin} {mA}
 
 * [ ] Block panel slowly from 90&deg; to the last direction, watching the measured current.
 
-{blank} +
 
 
 
@@ -84,4 +86,127 @@ Estimate the angle by moving it to 45&deg; and then splitting into thirds.
 
 
 
+// below is not for the print handout
+// just notes on the activity logistics
+ifndef::env-handout[]
+== Notes
 
+
+=== Supplies
+
+* [ ] Reflector lamp holder
+* [ ] Lamp of choice.  incandescent, LED, ???
+* [ ] Solar panel.  Red "`SunStream`" 5{V} module is convenient.
+* [ ] USB-A to red/black +/- breakout cable.
+* [ ] Banana to mini-grabber leads (red + black).
+* [ ] Multimeter
+* [ ] Manilla envelope or other flat sheet to block light better than printer paper.
+* [ ] Printed worksheet handout.
+* [ ] Pencil / pen.
+
+Working through the entire worksheet takes 20min *only* when students are already familiar with multimeter measurements and making + changing connections.
+
+
+Issues encountered last time:
+
+* 60% didn't know how to use a mini-grabber to make the connection to the USB breakout.
+Give a demo of how they work.
+Better: include a pic in the handout procedure.
+
+* Need eye contact when showing how to *see* and *count* the number of cells in the panel.
+The flat silvered wires between cells visually look like they are splitting the cells themselves, so most people count the dark patches instead.
+
+
+=== HS demo activity
+
+*For: 20min max activity with high schoolers*
+
+Few are very good or quick at making connections to test equipment -- minimize them changing the setup mid-activity.
+
+==== Agenda
+
+* Solar *panel* is made from solar *cells* plus support structure and wiring.
+
+* Each solar cell generates about 0.6{V} or 600{mV}, regardless of the individual cell's size/surface area.
+
+** Show the 250{W} panel and point out an individual cell there.
+
+** With 12x8 = 96 cells in *series*, this is about 57.6{V} expected.  The label says 59.8{V}, so really close (< 4% error)!
+
+
+* Show how to *identify* an individual cell on their panel.
+The wiring is flat and weaves over/under, look for the edges of the thin dark plate and don't be fooled by the wiring to over-count the number.
+
+** How many cells in your panel? (9 for the USB ones)
+
+** Compute the panel's expected voltage.  9 &times; 0.6{V} = 5.4{V}.
+
+
+* (skip to save time) Measure the open-circuit panel voltage with the DMM and compare to predicted.
+
+** The *exact voltage* drops when temperature *increases*, so a hot cell/panel measures less voltage.
+
+** The specific manufacturing of the cell will also change the O-C voltage a little.
+
+
+---
+
+
+* Switch to measure *short-circuit current*.  Save time by pre-staging this setup.
+
+** Put panel flat on table directly under the lamp.  Move panel around a little to get the biggest current value.
+Red SunStream panel is about 100{mA} with the 200{W} incandescent bulb.
+
+
+* Take the thick paper and slowly cover *ONE* cell.
+See how the current drastically drops by 80%.
+Series connection and we closed one of the "`valves`".
+
+* Slowly shade the panel from the right angle direction, covering parts of ALL the cells.
+The current smoothly decreases roughly proportional to the amount of shading.
+
+This shading has consequences on how and where to mount solar panels.
+While it's possible to add extra electronic parts to bypass or detour current around a shaded cell, this costs money and hardware, and thus is often not done.
+
+*Can not have shading over any part of a panel.*
+Similarly if the panels are series-connected.
+Sometimes the bypass diodes are only per panel instead of per cell.
+
+
+---
+
+*Optional*, measure the S-C current versus panel tilt angle.
+
+
+---
+
+From above, it's *"`best`"* to ensure that your panel always directly faces the sun over the course of a day.
+This requires some mechanics, bearings, and motors to move them in the right directions.
+
+* Increased time to design the whole solar farm.
+* More cost of the parts.
+* More time to construct the farm.
+* More labor for the construction.
+
+Once installed, the mechanisms need to be maintained.
+Grease the bearings, fix things that break, etc.
+Mowing the grass under the panels may be needed -- remember shading the cells.
+
+This is why most solar farms you see are just set at one angle and do not move.
+
+What if you made the frames tall enough so they were taller than the weeds?
+Then: _no need to mow at all_!
+Balancing against this is that the frames now require more steel, which increases the install cost.
+
+---
+
+Engineering doesn't always choose the *most efficient* or technically "`best`" solution always.
+We take into account the entire project, from design time and cost, to construction, to maintenance over the life of the operational life.
+Money and time are always part of our "`calculations`".
+
+
+What is *best* depends LOTS on the specific details of the situation and the needs or reasons for the project in the first place.
+
+
+
+endif::[]

@@ -42,7 +42,7 @@ endef
 default: html
 
 
-html: $(filter-out subs.html, $(SOURCE:.adoc=.html)) $(RESOURCES)
+html: $(filter-out subs.html template.html, $(SOURCE:.adoc=.html)) $(RESOURCES)
 
 pdf: $(SOURCE:.adoc=.pdf)
 
@@ -63,7 +63,7 @@ web: html
 	    --include='.htaccess' \
 	    --exclude='.*' \
 	    *.html fig css common js \
-	    dan@tesla.whiteaudio.com:/var/www/www.agnd.net/valpo/340/
+	    dan@tesla.whiteaudio.com:/var/www/www.agnd.net/valpo/solar/
 
 #fig: $(FIGURES)
 fig:
