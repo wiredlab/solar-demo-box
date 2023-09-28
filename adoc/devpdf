@@ -1,0 +1,14 @@
+#!/bin/bash
+
+
+PREFIX="$1"
+
+PDF="${PREFIX}.pdf"
+ADOC="${PREFIX}.adoc"
+
+
+make "$PDF"
+
+(sleep 3; zathura "${PDF}") &
+
+echo "$ADOC" | entr make "$PDF"

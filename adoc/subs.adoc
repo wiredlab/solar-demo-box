@@ -1,0 +1,70 @@
+// Common substitutions
+
+:circuitlab: https://www.circuitlab.com/[CircuitLab^]
+
+
+
+// handle special characters for HTML and PDF output using attributes
+:Omega: &Omega;
+:mu: &mu;
+:deg: &deg;
+:sect: &sect;
+:approx: &approx;
+:thinnbsp: &thinsp;
+
+// asciidoctor-pdf prefers decimal HTML entities
+// additionally, &nbsp; is explicitly supported
+// PR to also allow uppercase hex values (lower is already OK)
+ifdef::backend-pdf[]
+:Omega: &#937;
+:mu: &#956;
+:deg: &#176;
+:sect: &#167;
+:approx: &#8776;
+:thinnbsp: &#8239;
+endif::[]
+
+
+:dB: {nbsp}dB
+
+:GHz: {nbsp}GHz
+:MHz: {nbsp}MHz
+:kHz: {nbsp}kHz
+:Hz: {nbsp}Hz
+
+:ms: {nbsp}ms
+:us: {nbsp}{mu}s
+:ns: {nbsp}ns
+:ps: {nbsp}ps
+
+:V: {nbsp}V
+:mV: {nbsp}mV
+:uV: {nbsp}{mu}V
+
+:A: {nbsp}A
+:mA: {nbsp}mA
+:uA: {nbsp}{mu}A
+:nA: {nbsp}nA
+
+:GOhm: {nbsp}G{Omega}
+:MOhm: {nbsp}M{Omega}
+:kOhm: {nbsp}k{Omega}
+:Ohm: {nbsp}{Omega}
+
+:W: {nbsp}W
+:mW: {nbsp}mW
+
+:F: {nbsp}F
+:mF: {nbsp}mF
+:uF: {nbsp}{mu}F
+:nF: {nbsp}nF
+:pF: {nbsp}pF
+
+:H: {nbsp}H
+:mH: {nbsp}mH
+:uH: {nbsp}{mu}H
+:nH: {nbsp}nH
+
+:K: {nbsp}K
+:degC: {nbsp}{deg}C
+:degF: {nbsp}{deg}F
