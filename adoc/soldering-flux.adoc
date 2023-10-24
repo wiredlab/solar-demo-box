@@ -1,0 +1,300 @@
+= Soldering Chemistry
+Valparaiso University - Electrical and Computer Engineering
+:xrefstyle: short
+:reproducible:
+ifdef::env-handout[]
+:!toc:
+endif::[]
+
+include::subs.adoc[]
+
+
+:fillin: pass:[<span style="display:inline-block; width:8em; border-bottom:1px solid;"></span>]
+
+
+Soldering is fundamentally different from gluing things together -- it is metallurgy and some chemistry.
+
+
+== Metallurgy of solder
+
+
+https://www.youtube.com/playlist?list=PL926EC0F1F93C1837[PACE: Basic Soldering Lessons playlist^]
+
+
+
+
+* Why make soldered connections?  https://youtu.be/vIT4ra6Mo0s?si=xf8KEheYFuwHmiC8&t=220[3:40 --- ^]
+
+
+
+== Hands-on activity
+
+[#glue-style]
+=== Glue-style with no flux
+
+Solder doesn't like to "`stick`" to bare copper, especially when the surface is (microscopically) oxidised.
+
+
+Supplies::
+* [ ] Soldering iron
+* [ ] brass sponge
+* [ ] copper-clad strip
+* [ ] *60 / 40* solder wire
+
+
+---
+
+
+. Ensure your iron is on and up to temperature.
+
+. Clean the tip by wiping on the brass sponge.
+
+. Feed some *60 / 40* solder onto the iron tip so that there is a drop on the tip held on by surface tension.
+
+. Wait a few seconds for the flux that is in the core of the solder wire to burn off.
+
+. Place the drop onto a patch of the copper-clad strip as if you are putting a drop of glue.
+
+. Remove the iron and place in its stand.
+
+
+.What you should notice
+****
+* the solder drop doesn't "`want`" to "`stick`" (much) to the copper surface
+
+* surface tension to the tip makes it difficult to get the solder to stay on the copper surface
+
+* solder tends to *bead up* on the surface into a ball
+****
+
+
+[#add-flux]
+<<<
+=== Flux on the copper first
+
+Adding flux to the copper surface first helps the surface *wet*.
+
+Supplies::
+* [ ] (same as previous <<glue-style>>)
+* [ ] Flux in a paint-valve-pen
+
+
+---
+
+
+. Shake the flux pen to ensure the solvent and flux solds are well-mixed.
+
+. Un-cap the flux pen and notice how it works:
+Pressing on the felt tip opens the valve and lets fluid soak into the felt tip.
+
+. Point the flux pen downwards and put the tip on a clear part of the copper surface.
+
+. Activate the valve by pressing down.
+
+. Notice the flow of alcohol solvent carrying flux solids onto the surface.
+Stop before totally hosing down the area and making a mess :)
+
+
+*Repeat the same steps as <<glue-style>>*.
+Then use the iron tip to smear the solder around on the copper surface.
+
+
+.What you should notice
+****
+* a _fizz_ as the heat from the molten solder vaporizes the alcohol
+
+* less tendency to bead up into a ball and not "`stick`" to the copper
+
+* the edge of the solder on the copper is *thin and flat*
+****
+
+
+
+<<<
+=== Melt-and-cool
+
+What does it look like as solder transitions from liquid to solid?
+
+
+Supplies::
+* [ ] (same)
+* [ ] ensure you're using *Sn60 / Pb40* solder
+
+
+---
+
+
+. Clean the tip of the iron on the brass sponge.
+
+. Add a little solder to the tip of your iron.
+
+. Touch this to an area with solder on it already.
+You are adding a little extra so we can see the _solder freezing_ easier.
+Also spread the solder around to make a larger spot.
+
+. Remove the iron and watch the solder change!
+
+. Add the tip to melt the solder and do this several times.
+Add more solder if it seems useful.
+
+
+.What you should notice
+****
+* a "`wave`" / edge that travels from the edge of the solder pool inwards
+
+* a small change in color or *sheen*
+****
+
+
+
+<<<
+=== Heat -> flux -> solder -> cool
+
+Different solder alloys melt differently!
+
+Supplies::
+* [ ] *60 / 40* solder (already using)
+* [ ] *63 / 37* eutectic solder wire
+* [ ] Lead-free solder wire
+
+
+
+==== 60/40 behavior
+
+. Add some 60/40 solder to your iron tip and wipe off the tip on the brass sponge.
+
+. Find a clean part of your copper strip.
+
+. Place the iron tip onto the copper strip, laying down so the side of the tip is making contact.
+
+. Push in some *60/40* solder into the *wedge between the tip and copper*.
+
+. Move the iron tip around to make a larger *wetted area*.
+Add a little more solder if useful.
+
+. Remove the iron and watch the solder solidify.
+
+. Touch the tip back onto the pool *while "`stirring`" the pool as it melts (this is quick).
+
+
+.What you should notice
+****
+* stirring as the solder melts has a "`goopy`" phase just before it turns liquid
+
+* the copper *wets* much better using this technique of heat then solder wire.
+This is because the *flux* in the wire's core melts first and chemically cleans the surface!Adding more solder to make things _work_ better is really *adding fresh flux*, the extra solder only affects the heat transfer.
+****
+
+
+<<<
+==== eutectic 63/37 behavior
+
+* [ ] Repeat the last actions, but this time use the *63/ 37* _eutectic_ solder.
+
+...
+
+
+.What you should notice
+****
+* there is no "`goopy plastic`" phase when stirring before this solder melts
+
+* the freezing happens *really quickly*.
+
+* how long it takes to freeze after removing the iron depends on how hot you heated up the pool to
+****
+
+
+==== lead-free behavior
+
+* [ ] Clean the iron tip again and well.
+* [ ] Repeat the last actions.
+
+Be careful to not mix the solders together --- it changes the alloy!
+
+
+.What you should notice
+****
+* it takes more "`heat`" go get this to melt --- its melting point is quite a bit higher
+
+* the cooled solder has a matte finish instead of being shiny
+****
+
+
+
+<<<
+=== Wire-to-board connections
+
+
+Supplies::
+* [ ] 3 solder wire alloys
+* [ ] flux pen
+* [ ] 4-5 segments of stranded hookup wire with 8mm stripped ends
+
+
+---
+
+
+. Twist the stripped wire end so it doesn't tend to fray.
+
+. Add some liquid flux to the bare wire end so the flux wicks into the strands.
+
+. Somehow hold the wire so you can have both hands free for the solder wire and iron.
+
+. Clean your iron tip on the brass sponge.  (notice that we always do this before using it!)
+
+*Select a solder alloy and remember which one you have.*
+
+. Place the iron tip *under* the wire
+.. Touch the solder wire to the top of the wire to have a stack: +
+iron -- wire -- solder
+.. use only a *tiny* amount.  You only want to wick solder into the spaces in the strands.
+
+
+. Put the iron back and wait for a few seconds for the wire end to cool.
+
+. Bend a ~30 degree "`foot`" on the freshly *tinned* wire end.
+
+. Clean your iron tip and find a patch on your copper strip that has the *same solder* on it.
+
+. Place the wire flat onto the solder patch.
+
+. Place the iron tip flat onto the wire and lightly press down.
+This should melt the solder in the wire and on the patch.  (If not, add a tiny amount of solder to the tip to *aid with heat transfer*)
+
+. Remove the iron and hold the wire still until the solder freezes.
+
+
+.What you should notice
+****
+* solder quickly and easily *wicks* into the wire strands if everything is clean
+
+* the solder on the patch forms a *concave fillet* between the wire and copper
+
+* holding the wire still can be tricky
+****
+
+
+*Do the previous activity with a fresh wire, but use different solder alloys.*
+
+Notice the *cooling / solidifying* action especially!
+The 60/40 and 63/37 are different in the moments just before and after freezing.
+
+
+
+
+
+
+
+
+
+
+
+
+// below is not for the print handout
+// just notes on the activity logistics
+ifndef::env-handout[]
+<<<
+== Notes
+
+
+endif::[]
