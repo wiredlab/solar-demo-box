@@ -1,6 +1,8 @@
 
 
 SOURCE=$(wildcard *.adoc)
+HTMLS=$(filter-out subs.html template.html, $(SOURCE:.adoc=.html))
+PDFS=$(HTMLS:.html=.pdf)
 INCLUDE_DIRS=css fig
 
 FIGURES=$(wildcard fig/*)
@@ -42,9 +44,9 @@ endef
 default: html
 
 
-html: $(filter-out subs.html template.html, $(SOURCE:.adoc=.html)) $(RESOURCES)
+html: $(HTMLS) $(RESOURCES)
 
-pdf: $(SOURCE:.adoc=.pdf)
+pdf: $(PDFS)
 
 #	    $(INCLUDE_DIRS) *.html \
 
@@ -58,11 +60,12 @@ pdf: $(SOURCE:.adoc=.pdf)
 #	    . \
 #	    dan@tesla.whiteaudio.com:/var/www/www.agnd.net/valpo/341/guidebook/
 
-web: html
+web: html pdf
 	rsync -avuP \
 	    --include='.htaccess' \
 	    --exclude='.*' \
-	    *.html fig css common js \
+	    $(HTMLS) $(PDFS) \
+	    fig css common js \
 	    dan@tesla.whiteaudio.com:/var/www/www.agnd.net/valpo/solar/
 
 #fig: $(FIGURES)
