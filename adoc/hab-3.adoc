@@ -1,0 +1,64 @@
+= High Altitude Balloon Launch
+Valparaiso University Engineering and Meteorology
+:reproducible:
+
+include::subs.adoc[]
+
+
+:fillin: pass:[<span style="display:inline-block; width:8em; border-bottom:1px solid;"></span>]
+
+
+Supported by https://nearspaceeducation.org/[NearSpace Education^]
+
+
+Questions?:: Dan White <dan.white@valpo.edu>
+
+
+
+== Payload prep workshops
+
+Valparaiso University, https://maps.app.goo.gl/phL8MvmFk1gyno58A[Gellersen building^].
+Use the *east entrance on Sturdy Rd.* and park next to the silver oval solar energy research building.
+
+* Thursday July 10 at 7:30 PM.
+
+* Friday July 11 at 6:00 PM.
+
+== Saturday July 12 Schedule
+
+9:30 AM:: Participants arrive and check in.
+
+10:00 AM:: Balloon filling will begin after payloads are attached. +
+Count down and release will happen once all systems are GO for launch (about 10:20).
+
+10:30 -- 11:30 AM:: (_approx._) Faculty-led tours of the College of Engineering building and the Department of Geography, Meteorology, and Environmental Science building.
+
+
+== Where
+
+Park in https://maps.app.goo.gl/5sGECM49LakeaLx6A[Parking Lot 15^] on the west side of the Harre Union building.
+A parking permit is *not* needed for this event.
+
+
+
+++++
+<style>
+@media screen and (max-width:767px) {
+    iframe {
+        width: 100% !important;
+        height: 500px;
+    }
+}
+</style>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d688.4227465071341!2d-87.04447728754836!3d41.4639783475548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88119b7a97449df3%3A0x6830e3d760d179ed!2sParking%20Lot%2015!5e0!3m2!1sen!2sus!4v1752007627177!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+++++
+
+(https://maps.app.goo.gl/5sGECM49LakeaLx6A[^])
+
+image::campus-map-route.png[]
+
+
+
+
+
