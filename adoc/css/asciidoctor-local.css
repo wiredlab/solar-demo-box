@@ -1,0 +1,78 @@
+@import "asciidoctor.css";
+
+body {color: rgba(0,0,0,1);}
+
+
+.left {margin-right: 1.25em;}
+.right {margin-left: 1.25em;}
+
+.listingblock>.content>pre>code {
+    line-height: 1.1em;
+}
+
+.imageblock > .title {
+    text-align: inherit;
+}
+
+.ulist > ul>li {
+    margin-top: -0.5em;
+}
+
+.widelist > ul>li {
+    /*margin-top:2em;*/
+    margin-bottom:4em;
+}
+
+.columns-2 {
+  -moz-column-count: 2;
+  webkit-column-count: 2;
+  column-count: 2;
+}
+
+.columns-3 {
+  -moz-column-count: 3;
+  webkit-column-count: 3;
+  column-count: 3;
+}
+
+.column-break {
+    column-break-before: always;
+}
+
+ul dl {
+  break-inside: avoid-column;
+}
+
+@page {
+    margin: 0.5in 0.75in;
+    size: letter;
+}
+
+@media print {
+    /* Special text Black for printing */
+    .subheader, .admonitionblock td.content>.title, .audioblock>.title,
+    .exampleblock>.title, .imageblock>.title, .listingblock>.title,
+    .literalblock>.title, .stemblock>.title, .openblock>.title,
+    .paragraph>.title, .quoteblock>.title, table.tableblock>.title,
+    .verseblock>.title, .videoblock>.title,
+    .dlist>.title, .olist>.title, .ulist>.title, .qlist>.title, .hdlist>.title,
+    .admonitionblock td.content>.paragraph {
+        color:#000000;
+    }
+
+    h1, h2, h3, #toctitle, .sidebarblock>.content>.title, h4, h5, h6 {
+        color:#000000;
+    }
+
+    h1 small, h2 small, h3 small, #toctitle small,
+    .sidebarblock>.content>.title small, h4 small, h5 small, h6 small {
+        color:#000000;
+    }
+
+    /* do not show the URL after a link */
+    a[href^="http:"]:not(.bare)::after,a[href^="https:"]:not(.bare)::after {
+        /*content:"(" attr(href) ")"; */
+        content:"";
+    }
+
+}

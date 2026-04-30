@@ -15,24 +15,32 @@ Questions?:: Dan White <dan.white@valpo.edu>
 
 
 
-== Payload prep workshops
+== Payload prep and info session
 
 Valparaiso University, https://maps.app.goo.gl/phL8MvmFk1gyno58A[Gellersen building^].
 Use the *east entrance on Sturdy Rd.* and park next to the silver oval solar energy research building.
 
-* Thursday July 10 at 7:30 PM.
-
 * Friday July 11 at 6:00 PM.
+
 
 == Saturday July 12 Schedule
 
 9:30 AM:: Participants arrive and check in.
+Attach your experiment payload box or add experimental items to provided containers.
+Balloon filling will start.
 
-10:00 AM:: Balloon filling will begin after payloads are attached. +
+10:15 AM:: Balloon filling will begin around after payloads are attached. +
 Count down and release will happen once all systems are GO for launch (about 10:20).
 
 10:30 -- 11:30 AM:: (_approx._) Faculty-led tours of the College of Engineering building and the Department of Geography, Meteorology, and Environmental Science building.
 
+11:30 AM -- ???:: Chase team will continue tracking the balloon and go retrieve the experiments.
+
+
+https://predict.sondehub.org/?launch_datetime=2025-07-12T15%3A00%3A00Z&launch_latitude=41.4641&launch_longitude=272.9563&launch_altitude=240&ascent_rate=5&profile=standard_profile&prediction_type=single&burst_altitude=25000&descent_rate=8[Flight path prediction link^]
+
+
+https://data.nsldata.com/console/balloonDashboard.php?a=4hArLu9kRN5rY3MpCGJrAREyL6GoB[NearSpace Real-time Balloon Tracking web page^]
 
 == Where
 

@@ -48,7 +48,7 @@ function reportOrNot()
 document.addEventListener("DOMContentLoaded", function(event) {
     document.addEventListener('scroll', function(e) {
         hadActivity=true;
-        // I found this on Stacj Overflow somewhere..
+        // I found this on Stack Overflow somewhere..
         let scrollHeight = Math.max(
             document.body.scrollHeight, document.documentElement.scrollHeight,
             document.body.offsetHeight, document.documentElement.offsetHeight,
