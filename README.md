@@ -1,8 +1,19 @@
-# Solar Panel demonstration load
+# Solar panel demonstrations
+
+- Solar panel activity handout and supplies.
+- Load box and meters design for a hands-on maximum power point (MPPT) demonstration.
+
+
+## Panel activity
+
+Web version at [agnd.net/valpo/solar/panel-lamp](https://agnd.net/valpo/solar/panel-lamp.html)
 
 
 
-## Description
+
+## Load box
+
+### Description
 
 Support a panel intended for 12 V battery charging up to maximum power of 15 W.
 
